@@ -1,10 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
-<head >
-    <title>Pavithra Hatharasinghe</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pavithra Hatharasinghe | Software Engineer</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --panel: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --primary: #38bdf8;
+      --accent: #22d3ee;
+      --card: #1f2937;
+      --border: #334155;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+      background: radial-gradient(circle at 10% 10%, #1e293b 0, var(--bg) 40%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      width: min(1100px, 92%);
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 4.5rem 0 2.5rem;
+      border-bottom: 1px solid var(--border);
+      background: linear-gradient(120deg, rgba(56, 189, 248, 0.08), rgba(34, 211, 238, 0.04));
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 0.35rem 0.75rem;
+      border: 1px solid var(--primary);
+      color: var(--primary);
+      border-radius: 999px;
+      margin-bottom: 1rem;
+      font-size: 0.85rem;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 4vw, 3.3rem);
+      line-height: 1.15;
+      margin-bottom: 0.8rem;
+    }
+
+    .lead {
+      color: var(--muted);
+      max-width: 60ch;
+      margin-bottom: 1.2rem;
+    }
+
+    .hero-card {
+      background: rgba(17, 24, 39, 0.75);
+      border: 1px solid var(--border);
+      border-radius: 1rem;
+      padding: 1.4rem;
+      backdrop-filter: blur(6px);
+    }
+
+    .contact-list {
+      list-style: none;
+      display: grid;
+      gap: 0.6rem;
+    }
+
+    .contact-list a {
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .contact-list a:hover {
+      color: var(--accent);
+    }
+
+    main {
+      padding: 2.5rem 0 4rem;
+    }
+
+    section {
+      margin-top: 2rem;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      margin-bottom: 1rem;
+      color: #dbeafe;
+    }
+
+    .grid {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .skills-grid {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 0.9rem;
+      padding: 1rem;
+    }
+
+    .card h3 {
+      margin-bottom: 0.55rem;
+      font-size: 1.02rem;
+      color: #e2e8f0;
+    }
+
+    .card p,
+    .card li {
+      color: #cbd5e1;
+      font-size: 0.95rem;
+    }
+
+    .timeline-item {
+      margin-bottom: 1.2rem;
+    }
+
+    .timeline-item h3 {
+      margin-bottom: 0.25rem;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-bottom: 0.55rem;
+    }
+
+    ul {
+      padding-left: 1.1rem;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    @media (max-width: 820px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
-<h2> Pavithra Hatharasinghe</h2>
-    <h1>This is the body</h1>
+  <header>
+    <div class="container hero">
+      <div>
+        <span class="badge">Open to Visa-Sponsored Roles in Tokyo, Japan</span>
+        <h1>Pavithra Hatharasinghe</h1>
+        <p class="lead">
+          Software Engineer with 3+ years of full-stack experience delivering scalable enterprise
+          applications, Java middleware, and API integrations across Salesforce, MuleSoft, and PHP/Laravel ecosystems.
+        </p>
+        <p class="lead">
+          Core strengths include Java EE / Jakarta EE architecture, Laravel development, and complex integration work for global clients.
+        </p>
+      </div>
+      <aside class="hero-card">
+        <h2>Contact</h2>
+        <ul class="contact-list">
+          <li>📞 <a href="tel:+94779316741">+94 77 931 6741</a></li>
+          <li>✉️ <a href="mailto:pavithrahatsin@gmail.com">pavithrahatsin@gmail.com</a></li>
+          <li>📍 28, Thalgasgoda Road, Polwatthe, Ambalangoda 80300, Sri Lanka</li>
+          <li>🔗 <a href="https://linkedin.com/in/pavithrahatharasinghe" target="_blank" rel="noreferrer">linkedin.com/in/pavithrahatharasinghe</a></li>
+          <li>🏅 <a href="https://salesforce.com/trailblazer/pavxo" target="_blank" rel="noreferrer">salesforce.com/trailblazer/pavxo</a></li>
+        </ul>
+      </aside>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Technical Skills</h2>
+      <div class="grid skills-grid">
+        <article class="card">
+          <h3>Frameworks</h3>
+          <p>Laravel, Java EE, JavaFX, React Native, Kotlin, ASP.NET, Flutter, React, Next.js</p>
+        </article>
+        <article class="card">
+          <h3>Platforms</h3>
+          <p>MuleSoft, Salesforce, FormAssembly, Boomi</p>
+        </article>
+        <article class="card">
+          <h3>Languages</h3>
+          <p>PHP, Java, HTML/CSS, JavaScript, C#, Apex, Python</p>
+        </article>
+        <article class="card">
+          <h3>Databases & CMS</h3>
+          <p>MySQL, Oracle SQL, PostgreSQL, Firebase, Redis, WordPress, Kentico</p>
+        </article>
+        <article class="card">
+          <h3>Tools & Other</h3>
+          <p>Azure, GraphQL, Google Cloud, cPanel, Postman, Unity, Blender, Figma, Adobe XD</p>
+        </article>
+        <article class="card">
+          <h3>Languages Spoken</h3>
+          <p>English (Fluent), Sinhalese (Native), Japanese (Basic)</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Work Experience</h2>
+      <article class="card timeline-item">
+        <h3>Software Engineer · Genesis IT Labs</h3>
+        <p class="meta">2024 – Present</p>
+        <ul>
+          <li>Built Java EE/Jakarta EE middleware to automate sales and inventory data transfer from RLM to Toolio.</li>
+          <li>Led CRM data cleaning and migration into Keap using PHP and API integrations.</li>
+          <li>Engineered a PHP HR system with Xero API integration for automated payroll operations.</li>
+          <li>Delivered high-availability Laravel applications for global shipping, planning, and student management.</li>
+          <li>Developed Salesforce LWC components and process automations using flows and custom objects.</li>
+          <li>Implemented Google Tag Manager integrations on Salesforce Visualforce pages and CMS solutions.</li>
+        </ul>
+      </article>
+      <article class="card timeline-item">
+        <h3>Software Engineer Intern · MillenniumIT ESP</h3>
+        <p class="meta">2023 – 2024</p>
+        <ul>
+          <li>Contributed to middleware integrations using MuleSoft and RabbitMQ for mobile app APIs.</li>
+          <li>Enhanced a React Native museum game and developed Magento dashboard plugin functionality.</li>
+          <li>Supported Oracle CX Sales ecosystems with API integration, Groovy scripting, and MDM tools.</li>
+          <li>Built FormAssembly + Kentico integrations and delivered Salesforce and WordPress solutions.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="grid skills-grid">
+        <article class="card">
+          <h3>Cardiff Metropolitan University, UK</h3>
+          <p class="meta">2022 – 2023</p>
+          <p>BSc in Software Engineering (First Class Honors, Batch Top)</p>
+        </article>
+        <article class="card">
+          <h3>ICBT Campus, Colombo</h3>
+          <p class="meta">2020 – 2022</p>
+          <p>Higher Diploma in Computing and Software Engineering (Upper Second-Class Honors)</p>
+        </article>
+        <article class="card">
+          <h3>Dharmasoka College, Ambalangoda</h3>
+          <p class="meta">2006 – 2018</p>
+          <p>Advanced Level in Physical Science</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Certifications</h2>
+      <article class="card">
+        <p>MuleSoft Certified Developer Level 1 · FormAssembly Certification · Game Theory (Stanford University) · Google UX Design Certificates · Data Analysis with R Programming (Google) · Introduction to Game Design (Epic Games)</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>References</h2>
+      <div class="grid skills-grid">
+        <article class="card">
+          <h3>Vijith Liyanage</h3>
+          <p>Director – Operations, ICBT Campus</p>
+          <p class="meta">+94 (0) 11 4 777 888 · +94 (0) 77 3 442 627 · vijith@icbtcampus.edu.lk</p>
+        </article>
+        <article class="card">
+          <h3>Rev. Kobeithuduwe Vijitha Himi</h3>
+          <p>Viharadbhipathi, Aggaramaya, Polwatta, Ambalangoda, Sri Lanka</p>
+          <p class="meta">+94 (0) 71 840 4123</p>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      <p>© <span id="year"></span> Pavithra Hatharasinghe · Software Engineer</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
